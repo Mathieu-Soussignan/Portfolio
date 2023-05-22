@@ -39,9 +39,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function(event) {
-    emailjs.init("YOUR_USER_ID"); // Remplacez YOUR_USER_ID par votre identifiant utilisateur EmailJS
+    emailjs.init("pOBMkBQQ07KKV9RDq"); // Remplacez YOUR_USER_ID par votre identifiant utilisateur EmailJS
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'chbt6nt', '#contact-form')
+    emailjs.sendForm('service_45yf2am', 'chbt6nt', '#contact-form', 'pOBMkBQQ07KKV9RDq')
     .then(function(response) {
       console.log('SUCCES!', response.status, response.text);
       document.getElementById("contact-form").reset();
