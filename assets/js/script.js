@@ -38,32 +38,33 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+    $("#contact-form").submit(function(event) {
+    emailjs.init("YOUR_USER_ID"); // Remplacez YOUR_USER_ID par votre identifiant utilisateur EmailJS
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'chbt6nt', '#contact-form')
+    .then(function(response) {
+      console.log('SUCCES!', response.status, response.text);
+      document.getElementById("contact-form").reset();
+      alert("Formulaire Soumis avec Succès");
+    }, function(error) {
+      console.log('ECHEC...', error);
+      alert("La soumission du formulaire à échoué ! Réessayez");
+    });
+
+    event.preventDefault();
     });
     // <!-- emailjs to mail contact form data -->
-
+    
 });
 
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Mathieu Soussignan";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
-            document.title = "Come Back To Portfolio";
+            document.title = "Retour sur le Portfolio";
             $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });

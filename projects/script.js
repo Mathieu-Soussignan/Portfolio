@@ -20,7 +20,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Mathieu Soussignan";
+            document.title = "Projets | Portfolio Mathieu Soussignan";
             $("#favicon").attr("href", "/assets/images/favicon.png");
         }
         else {
