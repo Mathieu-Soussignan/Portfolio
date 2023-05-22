@@ -347,6 +347,8 @@ header .navbar ul li a:hover {
 /* about section starts */
 .about {
   background: rgb(255, 255, 255);
+  padding-top: 80px;
+  margin-top: -80px;
 }
 .about .row {
   display: flex;
@@ -461,6 +463,8 @@ header .navbar ul li a:hover {
 .skills {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
+  padding-top: 80px;
+  margin-top: -80px;
 }
 .skills h2 {
   color: #fff;
@@ -533,8 +537,9 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
+  padding-top: 80px;
+  margin-top: -80px;
 }
 .work h2 {
   color: #fff;
@@ -652,6 +657,10 @@ header .navbar ul li a:hover {
 /* work section ends */
 
 /* experience section starts */
+.experience {
+  padding-top: 80px;
+  margin-top: -80px;
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -826,6 +835,8 @@ header .navbar ul li a:hover {
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
+  padding-top: 80px;
+  margin-top: -80px;
 }
 .contact .container {
   max-width: 1050px;
