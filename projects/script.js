@@ -1,18 +1,21 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
+    var menu = document.getElementById('menu');
+    var navbar = document.querySelector('.navbar');
+    var scrollButton = document.querySelector('#scroll-top');
 
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
+    menu.addEventListener('click', function () {
+        this.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
     });
 
-    $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
+    window.addEventListener('scroll', function () {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
 
         if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
+            scrollButton.classList.add('active');
         } else {
-            document.querySelector('#scroll-top').classList.remove('active');
+            scrollButton.classList.remove('active');
         }
     });
 });
