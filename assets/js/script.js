@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function(event) {
-    emailjs.init("pOBMkBQQ07KKV9RDq"); // Remplacez YOUR_USER_ID par votre identifiant utilisateur EmailJS
+    emailjs.init("pOBMkBQQ07KKV9RDq"); // Identifiant utilisateur EmailJS
 
     emailjs.sendForm('service_45yf2am', 'chbt6nt', '#contact-form', 'pOBMkBQQ07KKV9RDq')
     .then(function(response) {
@@ -111,7 +111,6 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -196,7 +195,6 @@ srtop.reveal('.home .content .btn', { delay: 200 });
 srtop.reveal('.home .image', { delay: 400 });
 srtop.reveal('.home .linkedin', { interval: 600 });
 srtop.reveal('.home .github', { interval: 800 });
-srtop.reveal('.home .instagram', { interval: 600 });
 srtop.reveal('.home .dev', { interval: 600 });
 
 /* SCROLL ABOUT */
