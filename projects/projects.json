@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Projet-QCM",
+    "desc": "Projet de groupe qui voit le développement d'une application web, Quiz en mode QCM sur le thème des langages de programmation",
+    "category": "web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Bibliotheque-MVC",
+    "desc": "Projet de cours en architecture MVC utilisant HTML, CSS, PHP et SQL",
+    "category": "web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]
