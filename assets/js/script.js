@@ -39,19 +39,20 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function(event) {
+    event.preventDefault();
+
     emailjs.init("pOBMkBQQ07KKV9RDq"); // Identifiant utilisateur EmailJS
 
     emailjs.sendForm('service_45yf2am', 'chbt6nt', '#contact-form', 'pOBMkBQQ07KKV9RDq')
-    .then(function(response) {
-      console.log('SUCCES!', response.status, response.text);
-      document.getElementById("contact-form").reset();
-      alert("Formulaire Soumis avec Succès");
-    }, function(error) {
-      console.log('ECHEC...', error);
-      alert("La soumission du formulaire à échoué ! Réessayez");
-    });
-
-    event.preventDefault();
+        .then(function(response) {
+        console.log('SUCCES!', response.status, response.text);
+        document.getElementById("contact-form").reset();
+        document.getElementById("status-message").innerHTML = "Formulaire Soumis avec Succès";
+        })
+        .catch(function(error) {
+        console.log('ECHEC...', error);
+        document.getElementById("status-message").innerHTML = "La soumission du formulaire a échoué ! Réessayez";
+        });
     });
     // <!-- emailjs to mail contact form data -->
     
@@ -61,7 +62,7 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | Mathieu Soussignan";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            $("#favicon").attr("href", "assets/images/profile_color.png");
         }
         else {
             document.title = "Retour sur le Portfolio";

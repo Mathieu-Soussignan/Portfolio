@@ -936,6 +936,12 @@ form .button-area {
   float: right;
   flex-direction: row-reverse;
 }
+#status-message {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
 .button-area button {
   color: #fff;
   border: none;
