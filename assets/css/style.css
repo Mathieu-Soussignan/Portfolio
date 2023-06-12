@@ -539,7 +539,7 @@ header .navbar ul li a:hover {
 .work {
   background: linear-gradient(to bottom, #000031, #00002c);
   padding-top: 80px;
-  margin-top: -80px;
+  /* margin-top: -80px; */
 }
 .work h2 {
   color: #fff;
