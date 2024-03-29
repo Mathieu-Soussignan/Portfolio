@@ -19,7 +19,7 @@
   },
   {
   "name": "Todo List en React",
-  "desc": "Application permettant de gérer une liste de tâches à faire. Développée avec React et déployée sur Vercel, elle permet d'ajouter, de marquer et de supprimer des tâches de manière interactive.",
+  "desc": "Application permettant de gérer une liste de tâches à faire. Développée avec React et déployée sur Vercel.",
   "category": "web",
   "links": {
     "view": "https://todo-react-seven-vert.vercel.app/",
