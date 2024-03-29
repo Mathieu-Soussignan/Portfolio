@@ -4,7 +4,7 @@
     "desc": "Projet de groupe qui voit le développement d'une application web, Quiz en mode QCM sur le thème des langages de programmation",
     "category": "web",
     "links": {
-      "view": "http://bytemaster.alwaysdata.net/",
+      "view": "#",
       "code": "https://github.com/Srblx/Projet-QCM/"
     }
   },
@@ -16,5 +16,15 @@
       "view": "#",
       "code": "#"
     }
+  },
+  {
+  "name": "Todo List en React",
+  "desc": "Application permettant de gérer une liste de tâches à faire. Développée avec React et déployée sur Vercel, elle permet d'ajouter, de marquer et de supprimer des tâches de manière interactive.",
+  "category": "web",
+  "links": {
+    "view": "https://todo-react-seven-vert.vercel.app/",
+    "code": "https://github.com/Mathieu-Soussignan/Todo_react"
   }
+}
+
 ]
