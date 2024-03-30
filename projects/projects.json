@@ -13,6 +13,7 @@
     "desc": "Projet de cours en architecture MVC utilisant HTML, CSS, PHP et SQL",
     "category": "web",
     "links": {
+      "view": "#",
       "code": "https://github.com/Mathieu-Soussignan/Bibliotheque_MVC"
     }
   },
