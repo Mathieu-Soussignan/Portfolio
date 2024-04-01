@@ -9,15 +9,6 @@
     }
   },
   {
-    "name": "Bibliotheque-MVC",
-    "desc": "Projet de cours en architecture MVC utilisant HTML, CSS, PHP et SQL",
-    "category": "web",
-    "links": {
-      "view": "#",
-      "code": "https://github.com/Mathieu-Soussignan/Bibliotheque_MVC"
-    }
-  },
-  {
   "name": "Todo List en React",
   "desc": "Application permettant de gérer une liste de tâches à faire. Développée avec React et déployée sur Vercel.",
   "category": "web",
@@ -35,7 +26,6 @@
     "code": "https://github.com/Mathieu-Soussignan/Dice_Game"
   }
 }
-
 ]
 
 
