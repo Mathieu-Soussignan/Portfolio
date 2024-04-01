@@ -25,6 +25,17 @@
     "view": "https://todo-react-seven-vert.vercel.app/",
     "code": "https://github.com/Mathieu-Soussignan/Todo_react"
   }
+},
+{
+  "name": "Dice Game en React",
+  "desc": "Application qui a pour but de prédire le résultat d'un lancer de dé pour gagner des points. Développée avec React et déployée sur Vercel.",
+  "category": "web",
+  "links": {
+    "view": "https://dice-game-five-fawn.vercel.app/",
+    "code": "https://github.com/Mathieu-Soussignan/Dice_Game"
+  }
 }
 
 ]
+
+
